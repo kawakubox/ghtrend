@@ -7,5 +7,8 @@ describe Ghtrend do
 
   describe :trend do
     it { expect(Ghtrend).to respond_to :trend }
+
+    subject(:result) { Ghtrend.trend }
+    it { is_expected.to be_kind_of Hash }
   end
 end
