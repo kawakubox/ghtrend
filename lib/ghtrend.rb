@@ -1,5 +1,6 @@
 require "ghtrend/version"
 
 module Ghtrend
-  # Your code goes here...
+  def self.trend
+  end
 end
