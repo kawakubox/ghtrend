@@ -10,5 +10,6 @@ describe Ghtrend do
 
     subject(:result) { Ghtrend.trend }
     it { is_expected.to be_kind_of Array }
+    it 'has 25 elements' do expect(result.size).to eq 25 end
   end
 end
