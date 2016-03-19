@@ -2,6 +2,6 @@ require "ghtrend/version"
 
 module Ghtrend
   def self.trend
-    repos = {}
+    repos = []
   end
 end
