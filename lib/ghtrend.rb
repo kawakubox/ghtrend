@@ -26,7 +26,7 @@ module Ghtrend
   end
 
   def self.repo_description(node)
-    node.css('.repo-list-description').map { |e| trim(e.text) }.join(' ')
+    node.css('.repo-list-description').map { |e| trim(e.text.force_encoding('UTF-8')) }.join(' ')
   end
 
   def self.repo_meta(node)
